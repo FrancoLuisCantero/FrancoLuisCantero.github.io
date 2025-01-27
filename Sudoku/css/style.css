@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 15px;
+  text-align: center;
+  background-color: #044;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#botonesJuegos {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#título {
+  font-weight: 500;
+  font-size: 60px;
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 155, 155, 0.5);
+}
+#tablero {
+  border-collapse: collapse;
+  border: 5px solid #000;
+}
+#tablero tr:nth-child(3n) td {
+  border-bottom: 3px solid #000;
+}
+#tablero td:nth-child(3n) {
+  border-right: 3px solid #000;
+}
+.celda {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #777;
+  font-size: 20px;
+  text-align: center;
+}
+.juego {
+  width: 150px;
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 155, 155, 0.7);
+  border-radius: 15px;
+}
+.imagenJuego {
+  width: 100%;
+  border-radius: 3px;
+  transition: scale 0.5s ease;
+}
+.imagenJuego:hover {
+  scale: 1.1;
+}
+.botonJuego {
+  background-color: #111;
+  transition: all 1s ease;
+}
+.botonJuego:hover {
+  scale: 1.2;
+  background-color: #555;
+}
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+#btnResolver {
+  background-color: #050;
+}
+#btnReiniciar {
+  background-color: #500;
+}
+#btnResolver:hover {
+  background-color: #0f0;
+}
+#btnReiniciar:hover {
+  background-color: #f00;
+}
+.entradaUsuario {
+  background-color: #000;
+  color: #fff;
+  transition: all 3s ease;
+}
+.resolverEfecto {
+  background-color: #fff;
+  color: #000;
+}
