@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+h1 {
+  text-align: center;
+  background-color: #314;
+  color: #44f;
+  padding: 1.25vw 2.5vw;
+  font-size: 10vh;
+}
+
+.navbar {
+  background-color: #314;
+  color: #fff;
+  padding: 1.25vw 2.5vw;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  font-size: 20px;
+  color: #33b;
+  text-decoration: none;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+}
+
