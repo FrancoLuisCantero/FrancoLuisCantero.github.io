@@ -31,8 +31,34 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  background-color: #203;
+  color: #33b;
+  text-align: center;
+  padding: 1.25vw 2.5vw;
+}
+
+#presentacion {
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1.5vw;
+}
+
+#presentacion img {
+  background-color: #fff;
+  height: auto;
+  width: 50vw;
+}
+
+#presentacion p{
+  height: auto;
+  width: 40vw;
+}
+
 .img {
   width: 100px;
   height: 100px;
 }
-
