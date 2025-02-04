@@ -1,6 +1,6 @@
 # [💻 Mi Portafolio](https://francoluiscantero.github.io/index.html)
 
-¡Hola! Soy Franco Cantero, un apasionado del desarrollo y la tecnología. Este repositorio reúne mis proyectos académicos, donde aplico mis conocimientos en programación, diseño y resolución de problemas.
+¡Hola! Soy Franco Cantero, estudiante de la carrera Licenciatura en Informática. Este repositorio reúne mis proyectos académicos, donde aplico mis conocimientos en programación, diseño y resolución de problemas.
 
 ## 📌 Sobre Mí
 - 🎓 Formación en Licenciatura en Informática, en la Universidad Nacional de Hurlingham.
