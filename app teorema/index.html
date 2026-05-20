@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Teorema Fundamental de Numeración</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <aside class="panel">
+    <label for="base-select">Base (r)</label>
+    <select id="base-select"></select>
+
+    <label for="digits-select">Dígitos (n)</label>
+    <select id="digits-select"></select>
+
+    <label for="animation-mode-select">
+      Animación
+    </label>
+
+    <select id="animation-mode-select">
+      <option value="stepByStep" selected>
+        Step by step
+      </option>
+
+      <option value="flow">
+        Flow
+      </option>
+    </select>
+  </aside>
+
+  <aside class="detail-panel">
+    <label for="detail-slider">Nivel de detalle</label>
+    <input type="range" id="detail-slider" min="0" max="4" step="1" value="4" />
+  </aside>
+
+  <section class="display">
+    <div class="indexes" id="indexes"></div>
+    <div class="increments" id="increments"></div>
+    <div class="cryptex-container">
+      <div id="floating-additions"></div>
+      <main class="cryptex" id="cryptex"></main>
+    </div>
+    <div class="decrements" id="decrements"></div>
+    <div class="weights" id="weights"></div>
+    <div class="products" id="products"></div>
+    <div class="contributions" id="contributions"></div>
+    <div class="decimal-value" id="decimal-value"></div>
+  </section>
+
+  <nav class="controls">
+    <button id="reset-btn">Reiniciar</button>
+    <button id="backward-btn">Retroceder</button>
+    <button id="stop-btn">Detener</button>
+    <button id="forward-btn">Avanzar</button>
+
+    <input id="number-input" type="text" placeholder="Número" />
+    <button id="update-btn">Actualizar</button>
+  </nav>
+
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>

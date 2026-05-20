@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: white;
+  font-family: monospace;
+}
+
+.panel {
+  position: fixed;
+
+  top: 1rem;
+  right: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: fit-content;
+
+  gap: 0.75rem;
+}
+
+.cryptex-container {
+  position: relative;
+}
+
+.cryptex {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+}
+
+.cryptex::after {
+  content: var(--base);
+
+  position: absolute;
+
+  right: -1.5rem;
+  bottom: -0.5rem;
+
+  font-size: 1rem;
+}
+
+.cylinder {
+  width: 60px;
+  height: 80px;
+
+  overflow: hidden;
+
+  border: 1px solid black;
+}
+
+.cylinder.highlight-increment {
+  outline: 2px solid yellow;
+  box-shadow: 0 0 12px yellow;
+}
+
+.cylinder.highlight-carry {
+  outline: 2px solid cyan;
+  box-shadow: 0 0 12px cyan;
+}
+
+.cylinder.highlight-flow {
+  outline: 2px solid lime;
+  filter: brightness(1.3);
+}
+
+#floating-additions {
+  position: absolute;
+
+  inset: 0;
+
+  overflow: visible;
+
+  pointer-events: none;
+}
+
+.floating-addition {
+  position: absolute;
+
+  top: -6.5rem;
+
+  transform: translateX(-50%);
+
+  font-size: 2.5rem;
+
+  font-weight: bold;
+
+  color: #00ff88;
+
+  text-shadow:
+    0 0 8px #00ff88;
+
+  animation:
+    floatAddition
+    600ms ease-out forwards;
+}
+
+@keyframes floatAddition {
+  from {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+
+  to {
+    opacity: 0;
+
+    transform:
+      translateY(-30px);
+  }
+}
+
+.digits {
+  transition: transform 0.3s ease;
+}
+
+.digit {
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+}
+
+.controls {
+  position: fixed;
+
+  bottom: 2rem;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 1rem;
+}
+
+.controls button {
+  padding: 0.5rem 1rem;
+
+  background: white;
+  border: 1px solid black;
+
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.weights {
+  display: flex;
+  gap: 1rem;
+}
+
+.weight {
+  width: 60px;
+
+  text-align: center;
+
+  font-size: 1rem;
+  color: red;
+  overflow-wrap: break-word;
+}
+
+.increments,
+.decrements {
+  display: flex;
+  gap: 1rem;
+}
+
+.increment-btn,
+.decrement-btn {
+  width: 60px;
+
+  padding: 0.25rem;
+
+  background: white;
+
+  border: 1px solid black;
+
+  font-family: monospace;
+
+  cursor: pointer;
+}
+
+.indexes {
+  display: flex;
+  gap: 1rem;
+}
+
+.index {
+  width: 60px;
+
+  text-align: center;
+
+  color: blue;
+
+  font-size: 1rem;
+}
+
+.products,
+.contributions {
+  display: flex;
+  gap: 1rem;
+}
+
+.product,
+.contribution {
+  width: 60px;
+  text-align: center;
+  font-size: 0.9rem;
+  overflow-wrap: break-word;
+  white-space: nowrap;
+  transform-origin: center;
+}
+
+.detail-panel {
+  position: fixed;
+
+  top: 1rem;
+  left: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.decimal-value {
+  position: relative;
+  width: 100%;
+
+  text-align: right;
+
+  white-space: nowrap;
+
+  font-size: 2rem;
+}
+
+.decimal-value::before {
+  content: "=";
+
+  position: absolute;
+
+  left: 0;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+.decimal-value::after {
+  content: "10";
+
+  position: absolute;
+
+  right: -1.5rem;
+  bottom: -0.25rem;
+
+  font-size: 1rem;
+}
